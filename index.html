@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Questacy — Don't Just Visit. Quest It.</title>
+<meta name="description" content="Questacy turns city exploration into real-world adventures. Discover quests, explore hidden places, earn XP, and unlock rewards.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<meta name="theme-color" content="#F6F2E8">
+</head>
+<body>
+<a href="#main" style="position:absolute;left:-999px" class="btn p" onfocus="this.style.left='12px'" onblur="this.style.left='-999px'">Skip to content</a>
+<header id="hd"><div class="wrap nav">
+<a class="logo" href="#top" aria-label="Questacy home"><b></b>QUESTACY</a>
+<button class="burger" id="bg" aria-label="Open menu" aria-expanded="false" aria-controls="lk"><span></span><span></span></button>
+<nav class="links" id="lk" aria-label="Main">
+<a href="#explore">Explore</a><a href="#how">How it works</a><a href="#quests">Quests</a><a href="#rewards">Rewards</a><a href="#progress">Progress</a><a href="#early-access">Early access</a>
+<a class="btn p" href="#early-access">Get early access</a></nav></div></header>
+
+<main id="main"><span id="top"></span>
+<!-- HERO -->
+<section class="hero" style="padding-bottom:0"><div class="wrap hg">
+<div><span class="tag ld" style="animation-delay:.05s">Pilot city: Shimla, India</span>
+<h1 style="margin-top:22px" class="ld"><span>Don't just visit.</span><span class="l2">Quest it.</span></h1>
+<p class="lead ld" style="animation-delay:.25s">Turn any city into an adventure. Discover hidden places, complete real-world quests, earn XP, and unlock experiences along the way.</p>
+<div class="cta ld" style="animation-delay:.4s"><a class="btn p" href="#explore">Start exploring <i>→</i></a><a class="btn s" href="#how">How it works</a></div></div>
+<div class="map ld" style="animation-delay:.3s" id="hmap" aria-label="Illustration of a Questacy quest map for Shimla">
+<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g class="streets"><rect class="bl" x="8" y="22" width="26" height="18" rx="4"/><rect class="bl" x="58" y="14" width="30" height="22" rx="4"/><rect class="bl" x="14" y="56" width="30" height="24" rx="4"/><rect class="bl" x="60" y="60" width="26" height="22" rx="4"/>
+<path d="M0 48H100M0 90H100M46 0V100M-5 20L105 38"/></g>
+<path class="route" d="M18 72 C30 60 38 66 48 52 S70 48 78 30 82 22 70 22" vector-effect="non-scaling-stroke"/></svg>
+<span class="city">SHIMLA</span>
+<div class="chip xp" data-p="0.04"><span id="xpn">+0</span> XP<small>Quest completed</small></div>
+<button class="pin done" style="left:18%;top:72%;animation-delay:.9s" aria-label="Start: Mall Road"><span class="tip">Mall Road · done</span></button>
+<button class="pin" style="left:48%;top:52%;animation-delay:1.2s" aria-label="Quest marker"><span class="tip">Christ Church · +120 XP</span></button>
+<button class="pin" style="left:78%;top:30%;animation-delay:1.5s" aria-label="Quest marker"><span class="tip">Hidden viewpoint · +250 XP</span></button>
+<button class="pin gold" style="left:70%;top:22%;animation-delay:1.8s" aria-label="Reward marker"><span class="tip">Reward unlocked</span></button>
+<div class="chip fl" style="top:34%;left:5%;max-width:46%" data-p="0.03"><small>Quest</small>The Hidden Ridge<small>2.4 km · ~45 min</small></div>
+<div class="chip done-c" data-p="0.06" style="left:auto;right:6%"><b>✓</b>Quest completed</div>
+</div></div></section>
+
+<!-- PROBLEM -->
+<section><div class="wrap">
+<h2 class="rv">You're visiting.<br>But are you really exploring?</h2>
+<p class="lead rv">Most travel is predictable. Follow the map. Take the photo. Visit the landmark. Leave.</p>
+<div class="pgrid" id="prob"></div></div></section>
+<div class="flip rv"><div class="wrap"><span class="tag">Plot twist</span><h2>What if exploring a city felt like <em>a game?</em></h2></div></div>
+
+<!-- LOOP -->
+<section id="about"><div class="wrap">
+<h2 class="rv">We turn cities<br>into playgrounds.</h2>
+<p class="lead rv">Questacy transforms real-world locations into interactive adventures. Every street could be a quest.</p>
+<div class="loop rv" id="loop" aria-label="Core loop"></div></div></section>
+
+<!-- HOW -->
+<section id="how" style="padding-top:0"><div class="wrap">
+<h2 class="rv">How it works</h2><div class="steps" id="steps"></div></div></section>
+
+<!-- TYPES -->
+<section id="quests"><div class="wrap">
+<h2 class="rv">There's a quest for every kind of explorer.</h2><div class="tg" id="types"></div></div></section>
+
+<!-- SHIMLA -->
+<section class="shim" id="explore"><div class="wrap">
+<h2 class="rv">Your first quest starts in Shimla.</h2>
+<p class="lead rv">Explore the city beyond the tourist checklist.</p>
+<div class="sg">
+<div><div class="map map2" id="smap" role="group" aria-label="Interactive-style map of Shimla quest locations"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><g class="streets"><rect class="bl" x="6" y="8" width="24" height="26" rx="4"/><rect class="bl" x="68" y="58" width="26" height="30" rx="4"/><rect class="bl" x="10" y="64" width="26" height="24" rx="4"/><path d="M0 50H100M50 0V100M0 20Q50 40 100 22M0 80Q50 62 100 82" vector-effect="non-scaling-stroke"/></g><polyline class="route" points="14,50 32,50 50,28 70,50 84,50 50,74 50,28" vector-effect="non-scaling-stroke"/></svg></div>
+<div class="stats" id="sstats"></div></div>
+<article class="qc rv"><div class="top">SHIMLA · EXPLORATION</div><h3>The Hidden Ridge</h3><p style="color:var(--mut)">Find the place where the city's stories meet.</p>
+<div class="meta"><span>2.4 km</span><span>~45 min</span><span class="xpb">+250 XP</span></div>
+<button class="btn p quest-launch" type="button" style="width:100%;justify-content:center" data-start-quest="ridge-run">Play demo quest <i>→</i></button></article></div></div></section>
+
+<!-- PROFILE -->
+<section id="progress"><div class="wrap pg">
+<div><span class="tag">YOUR LOCAL DEMO PROFILE</span><h2 class="rv" style="margin-top:20px">Explore more.<br>Level up.</h2><p class="lead rv">Your demo XP and checkpoints are saved on this device only. No account or cloud sync yet.</p><button class="btn s" id="reset-progress" type="button" style="margin-top:22px">Reset demo progress</button></div>
+<div class="prof rv" id="prof" role="group" aria-label="Your explorer progress"><div class="row"><b style="font:800 1.3rem var(--disp)">Explorer</b><span class="lvl" id="level-label">LVL 01</span></div><div class="xpbar" role="progressbar" aria-label="XP progress to next level" aria-valuenow="0" aria-valuemin="0" aria-valuemax="500"><b id="progress-bar"></b></div><small style="color:#A6AA9C"><span id="xp-total">0</span> total XP · <span id="xp-next">0 / 500</span> to next level</small><div class="pst"><div><b id="quests-done">0</b><span>Quests done</span></div><div><b id="stops-done">0</b><span>Stops found</span></div><div><b id="badges-count">0</b><span>Badges</span></div></div><div class="badges" id="earned-badges"><span class="badge">🧭 First steps await</span></div></div></div></section>
+
+<!-- REWARDS -->
+<section id="rewards" style="padding-top:0"><div class="wrap">
+<h2 class="rv">Your adventure should pay you back.</h2>
+<p class="lead rv">Complete quests and unlock rewards from local businesses and experiences. Sample rewards shown.</p>
+<div class="rg" id="rw"></div></div></section>
+
+<!-- COMMUNITY -->
+<section style="padding-top:0"><div class="wrap">
+<h2 class="rv">Explore together.</h2><div class="cs" id="cs"></div>
+<p class="demo">Prototype numbers for design purposes. Not real usage statistics.</p></div></section>
+
+<!-- VISION -->
+<section class="vis"><div class="wrap vg">
+<div><h2 class="rv">Start with Shimla.<br>Explore everywhere.</h2><p class="lead rv">The quest map is growing. Only Shimla is the pilot. The other cities are what comes next.</p>
+<blockquote class="rv">Every city has stories.<br>Every neighborhood has secrets.<br>Every place can become a quest.</blockquote></div>
+<div class="vm" id="vm" role="img" aria-label="Map of planned cities: Shimla is the pilot, followed by Delhi, Jaipur, Mumbai, Goa and Bengaluru"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polyline points="46,12 44,28 32,38 26,58 30,74 44,86"/></svg></div></div></section>
+
+<!-- COMPARE -->
+<section><div class="wrap"><h2 class="rv">Sightseeing vs. Questacy</h2><div class="cmp" id="cmp"></div></div></section>
+
+<!-- TESTIMONIALS -->
+<section style="padding-top:0"><div class="wrap"><h2 class="rv">Early concept feedback</h2>
+<div class="tm" id="tm"></div><p class="demo">Placeholder quotes for the prototype. Real user feedback will replace them.</p></div></section>
+
+<!-- PLAYABLE QUEST -->
+<section id="play-quest"><div class="wrap"><span class="tag">INTERACTIVE DEMO · NOT FIELD-VERIFIED</span><h2 class="rv" style="margin-top:20px">The Ridge Run.</h2><p class="lead rv">A conceptual 5-stop, 45–60 minute quest inspired by Mall Road and The Ridge. This demo checks answers only; it does not verify your physical location.</p><div class="quest-shell" id="quest-app"><div class="quest-intro"><div class="quest-icon">🧭</div><div><h3>Ready to quest?</h3><p>Reveal clues, solve each checkpoint, and earn XP once per stop.</p></div><button class="btn p" id="start-ridge-run" type="button">Start The Ridge Run →</button></div><div id="quest-stage" hidden></div><p class="demo">Prototype experience. Please use public paths, respect local rules, and don't enter restricted areas.</p></div></div></section>
+
+<!-- EARLY ACCESS -->
+<section class="conversion" id="early-access"><div class="wrap conversion-grid"><div><span class="tag">HELP SHAPE THE FIRST DROP</span><h2 style="margin-top:20px">Be among the<br>first to quest.</h2><p class="lead">We're building a new way to explore the places you love. Join the early-access list for Questacy's first Shimla experiences, prototype launches, and opportunities to try the product.</p><p class="demo">No payment or booking. Just relevant early-access updates.</p></div><div class="form-card"><form id="early-access-form"><label for="ea-name">Name <span>(optional)</span></label><input id="ea-name" name="name" autocomplete="given-name" maxlength="80" placeholder="What should we call you?"><label for="ea-email">Email address <span>*</span></label><input id="ea-email" name="email" type="email" autocomplete="email" required maxlength="254" placeholder="you@example.com"><label for="ea-type">I’m a… <span>(optional)</span></label><select id="ea-type" name="user_type"><option value="">Choose one</option><option>Student</option><option>Local Explorer</option><option>Traveller</option><option>Other</option></select><label class="consent"><input type="checkbox" id="ea-consent" required><span>I agree to receive relevant Questacy early-access updates. I can opt out later. <a href="#privacy-note">Privacy note</a>.</span></label><button class="btn p form-submit" type="submit">Join the early list <i>→</i></button><p class="form-status" id="ea-status" role="status" aria-live="polite"></p><p class="demo">Your email is only registered when the configured backend confirms it. This form will not fake a successful signup.</p></form><div class="success-panel" id="ea-success" hidden><div class="success-mark">✓</div><h3>You're on the list.</h3><p>Thanks for your interest in Questacy. We'll reach out when there's something worth exploring.</p></div></div></div></section>
+
+<!-- PARTNER INTEREST -->
+<section id="partners" style="padding-top:0"><div class="wrap partner-grid"><div><h2>Build the city<br>with us.</h2><p class="lead">A local cafe, shop, attraction, or experience worth discovering? Tell us about a possible partnership. This is an expression of interest, not an existing partnership or guarantee.</p></div><div class="form-card"><form id="business-form"><label for="biz-name">Business name *</label><input id="biz-name" name="business_name" required maxlength="120" placeholder="Business or venue name"><label for="biz-contact">Your name *</label><input id="biz-contact" name="contact_name" required maxlength="80" placeholder="Contact person"><label for="biz-email">Business email *</label><input id="biz-email" name="email" type="email" required maxlength="254" placeholder="you@business.com"><label for="biz-category">Category *</label><select id="biz-category" name="category" required><option value="">Choose category</option><option>Cafe / Restaurant</option><option>Retail / Shop</option><option>Attraction / Experience</option><option>Accommodation</option><option>Other</option></select><label for="biz-message">Anything we should know? <span>(optional)</span></label><textarea id="biz-message" name="message" rows="3" maxlength="1000" placeholder="Tell us what makes your place special"></textarea><label class="consent"><input type="checkbox" id="biz-consent" required><span>I agree Questacy may contact me about this partnership enquiry.</span></label><button class="btn s form-submit" type="submit">Partner with Questacy →</button><p class="form-status" id="biz-status" role="status" aria-live="polite"></p><p class="demo">Submissions require the business-interest backend to be configured.</p></form><div class="success-panel" id="biz-success" hidden><div class="success-mark">✓</div><h3>Interest received.</h3><p>Thanks for reaching out. Your enquiry was saved successfully.</p></div></div></div></section>
+
+<section class="fin" id="start"><div class="wrap"><h2 class="rv">Your next adventure<br>is waiting.</h2><p>Don't just visit the city.<br>Quest it.</p><div class="cta"><a class="btn p" href="#early-access">Get early access <i>→</i></a><a class="btn s" href="#play-quest">Play the demo</a></div></div></section>
+<p class="privacy-note wrap" id="privacy-note">Privacy: Questacy collects only the information you submit for early-access or partnership updates. The configured backend stores submissions securely. Demo game progress stays in this browser's local storage and is not a synced account. See README for the data schema and setup.</p>
+</main>
+
+<footer><div class="wrap"><div class="fg" id="ft"></div>
+<div class="fb"><strong>QUESTACY</strong>Don't just visit. Quest it.<br><br>© 2026 Questacy. All rights reserved.</div></div></footer>
+
+<script src="config.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
